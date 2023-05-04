@@ -19,15 +19,15 @@
                 <img class="logo" src="./img/logo.svg" alt="Logo">
                 <!-- NAVIGAZIONE -->
                 <div class="navigation">
-                    <ul>
+                    <ul class="border">
                         <li>
-                            <a href="#"><i class="fa fa-home"></i> Home</a>
+                            <a href="#"><img src="./img/home.svg" alt="home"> Home</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-search"></i> Cerca</a>
+                            <a href="#"><img src="./img/search.svg" alt="search"> Cerca</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fas fa-book"></i> La tua libreria</a>
+                            <a href="#"><img src="./img/libreria.svg" alt="libreria"> La tua libreria</a>
                         </li>
                     </ul>
                     <div class="playlist">
@@ -64,15 +64,123 @@
                     </div>
                 </div>
                 <div class="navigation-bottom">
-                    <a href="#">Installa app</a>
+                    <a href="#"><img src="./img/download.svg" alt="download"> Installa app</a>
                     <hr>
-                    <a href="#">John Doe</a>
+                    <img class="profile" src="./img/profile.svg" alt="profile"><a href="#">John Doe</a>
                 </div>
             </div>
             <!-- CONTENUTO CENTRALE E TOP BAR-->
             <div class="main">
                 <div class="top-bar">
                     <button>EFFETTUARE L'UPGRADE</button>
+                </div>
+                <div class="spotify-playlsit">
+                    <div class="cartelle">
+                        <ul>
+                            <li>
+                                <a href="#">IN EVIDENZA</a>
+                            </li>
+                            <li>
+                                <a href="#">PODCAST</a>
+                            </li>
+                            <li>
+                                <a href="#">CLASSIFICHE</a>
+                            </li>
+                            <li>
+                                <a href="#">GENERI E MOOD</a>
+                            </li>
+                            <li>
+                                <a href="#">NUOVE USCITE</a>
+                            </li>
+                            <li>
+                                <a href="#">SCOPRI</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2>Recently Played</h2>
+                    <div class="row-spotify">
+                        <div class="col-spotify">
+                            <div class="content-spotify hover">
+                                <img src="./img/metal_lifting.jpg" alt="metal_lifting">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <h2>Heavy Metal</h2>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+                        <div class="col-spotify">
+                            <div class="content-spotify hover">
+                                <img src="./img/stranger.jpeg" alt="stranger">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <h2>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h2>
+                                <p>Kyle Dixon & Michael Stein</p>
+                            </div>
+                        </div>
+                        <div class="col-spotify">
+                            <div class="content-spotify hover">
+                                <img src="./img/aquietplace.jpeg" alt="aquietplace">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <h2>A quiet place</h2>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+                        <div class="col-spotify">
+                            <div class="content-spotify hover">
+                                <img src="./img/split.jpeg" alt="split">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <h2>Split</h2>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+                        <div class="col-spotify">
+                            <div class="content-spotify hover">
+                                <img src="./img/cure.jpeg" alt="cure">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <h2>A cure for wellness</h2>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+                        <div class="col-spotify">
+                            <div class="content-spotify hover">
+                                <img src="./img/sinister.jpeg" alt="sinister">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <h2>Sinister</h2>
+                                <p>Subtitle</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="text-start">
+                        <h2>Creato per Jhon Doe</h2>
+                        <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                    </div>
+                    <div class="row2-spotify">
+                        <div class="col2-spotify">
+                            <div class="content-spotify">
+                                <img src="./img/radar.jpeg" alt="radar">
+                            </div>
+                        </div>
+                        <div class="col2-spotify">
+                            <div class="content-spotify">
+                                <img src="./img/mixdaily.jpeg" alt="mixdaily">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-start">
+                        <h2>Artisti più popolari</h2>
+                        <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                    </div>
+                    <div class="row2-spotify">
+                        <div class="col2-spotify">
+                            <div class="content-spotify">
+                                <img class="border-radius" src="./img/youg.jpeg" alt="youg">
+                            </div>
+                        </div>
+                        <div class="col2-spotify">
+                            <div class="content-spotify">
+                                <img class="border-radius" src="./img/einaudi.jpeg" alt="einaudi">
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             <!-- FINE CONTENUTO CENTRALE E TOP BAR-->
@@ -97,12 +205,18 @@
                     </div>
                     <div class="range">
                         <label for="min">0:25</label>
-                        <input type="range" name="min" min="0:25" max="4:35">
+                        <input type="range" class="slider" name="min" min="0:25" max="4:35">
                         <label for="min">4:35</label>
                     </div>
                 </div>
                 <div class="col-bottom-bar">
-                    <i class="fa-regular fa-bars"></i>
+                    <div class="volume">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-display"></i>
+                        <i class="fas fa-volume-high"></i>
+                        <input type="range" class="slider" value="22" min="0" max="100" oninput="rangevalue.value=value"/>
+                        <output id="rangevalue">22</output>
+                    </div>
                 </div>
             </div>
             <!-- FINE BOTTOM BAR -->

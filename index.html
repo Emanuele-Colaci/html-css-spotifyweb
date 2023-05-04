@@ -101,48 +101,60 @@
                     <div class="row-spotify">
                         <div class="col-spotify">
                             <div class="content-spotify hover">
-                                <img src="./img/metal_lifting.jpg" alt="metal_lifting">
-                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="circle">
+                                    <img src="./img/metal_lifting.jpg" alt="metal_lifting">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h2>Heavy Metal</h2>
                                 <p>Subtitle</p>
                             </div>
                         </div>
                         <div class="col-spotify">
                             <div class="content-spotify hover">
-                                <img src="./img/stranger.jpeg" alt="stranger">
-                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="circle">
+                                    <img src="./img/stranger.jpeg" alt="stranger">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h2>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h2>
                                 <p>Kyle Dixon & Michael Stein</p>
                             </div>
                         </div>
                         <div class="col-spotify">
                             <div class="content-spotify hover">
-                                <img src="./img/aquietplace.jpeg" alt="aquietplace">
-                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="circle">
+                                    <img src="./img/aquietplace.jpeg" alt="aquietplace">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h2>A quiet place</h2>
                                 <p>Subtitle</p>
                             </div>
                         </div>
                         <div class="col-spotify">
                             <div class="content-spotify hover">
-                                <img src="./img/split.jpeg" alt="split">
-                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="circle">
+                                    <img src="./img/split.jpeg" alt="split">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h2>Split</h2>
                                 <p>Subtitle</p>
                             </div>
                         </div>
                         <div class="col-spotify">
                             <div class="content-spotify hover">
-                                <img src="./img/cure.jpeg" alt="cure">
-                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="circle">
+                                    <img src="./img/cure.jpeg" alt="cure">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h2>A cure for wellness</h2>
                                 <p>Subtitle</p>
                             </div>
                         </div>
                         <div class="col-spotify">
                             <div class="content-spotify hover">
-                                <img src="./img/sinister.jpeg" alt="sinister">
-                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="circle">
+                                    <img src="./img/sinister.jpeg" alt="sinister">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h2>Sinister</h2>
                                 <p>Subtitle</p>
                             </div>
@@ -183,43 +195,42 @@
                     
                 </div>
             </div>
-            <!-- FINE CONTENUTO CENTRALE E TOP BAR-->
-            <!-- BOTTOM BAR -->
-            <div class="bottom-bar">
-                <div class="col-bottom-bar">
-                    <img src="./img/sinister.jpeg" alt="sinister">
-                    <div class="name-bottom-bar">
-                        <p>Sinister</p>
-                        <p class="grey">Brano nome</p>
+                <!-- FINE CONTENUTO CENTRALE E TOP BAR-->
+                <!-- BOTTOM BAR -->
+                <div class="bottom-bar">
+                    <div class="col-bottom-bar">
+                        <img src="./img/sinister.jpeg" alt="sinister">
+                        <div class="name-bottom-bar">
+                            <p>Sinister</p>
+                            <p class="grey">Brano nome</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
                     </div>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                    <div class="col-bottom-bar">
+                        <div class="play">
+                            <i class="fa-solid fa-shuffle"></i>
+                            <i class="fa-solid fa-backward-step"></i>
+                            <i class="fa-regular fa-circle-play big"></i>
+                            <i class="fa-solid fa-forward-step"></i>
+                            <i class="fa-solid fa-arrow-rotate-right"></i>
+                        </div>
+                        <div class="range">
+                            <label for="min">0:25</label>
+                            <input type="range" class="slider" name="min" min="0:25" max="4:35">
+                            <label for="min">4:35</label>
+                        </div>
+                    </div>
+                    <div class="col-bottom-bar">
+                        <div class="volume">
+                            <i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-display"></i>
+                            <i class="fas fa-volume-high"></i>
+                            <input type="range" class="slider" value="22" min="0" max="100" oninput="rangevalue.value=value"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-bottom-bar">
-                    <div class="play">
-                        <i class="fa-solid fa-shuffle"></i>
-                        <i class="fa-solid fa-backward-step"></i>
-                        <i class="fa-regular fa-circle-play"></i>
-                        <i class="fa-solid fa-forward-step"></i>
-                        <i class="fa-solid fa-arrow-rotate-right"></i>
-                    </div>
-                    <div class="range">
-                        <label for="min">0:25</label>
-                        <input type="range" class="slider" name="min" min="0:25" max="4:35">
-                        <label for="min">4:35</label>
-                    </div>
-                </div>
-                <div class="col-bottom-bar">
-                    <div class="volume">
-                        <i class="fa-solid fa-bars"></i>
-                        <i class="fa-solid fa-display"></i>
-                        <i class="fas fa-volume-high"></i>
-                        <input type="range" class="slider" value="22" min="0" max="100" oninput="rangevalue.value=value"/>
-                        <output id="rangevalue">22</output>
-                    </div>
-                </div>
-            </div>
-            <!-- FINE BOTTOM BAR -->
+                <!-- FINE BOTTOM BAR -->
         </div>
     </body>
 </html>

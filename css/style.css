@@ -63,7 +63,7 @@ body{
 }
 
 .navigation-bottom{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .navigation-bottom a{
@@ -113,8 +113,41 @@ body{
     left: 0;
     right: 0;
     background-color: #282828;
-    padding: 30px 5px;
+    padding: 15px 5px;
     display: flex;
     justify-content: space-between;
 }
+
+.col-bottom-bar{
+    display: flex;
+    align-items: center;
+    width: calc(100% / 3);
+}
+
+.col-bottom-bar img{
+    width: 40px;
+}
+
+.name-bottom-bar{
+    margin: 0 40px 0 10px;
+    color: #ffffff;
+    font-size: 0.6rem;
+}
+
+.col-bottom-bar i{
+    margin-right: 10px;
+    color: #b3b3b3;
+    font-size: 0.6rem;
+}
+
+.grey{
+    color: #b3b3b3;
+}
+
+.col-bottom-bar:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* FINE BOTTOM BAR */

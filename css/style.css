@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #141922;
 }
 
 .container{
@@ -18,19 +19,26 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
+    bottom: 0px;
     width: 200px;
-    height: 100%;
-    padding: 15px 15px 80px 0px;
+    height: 100vh;
+    padding: 15px 15px 73px 0px;
     z-index: 80;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.logo{
+.logo-spotify img{
     width: 130px;
+}
+
+.logo{
     padding-left: 18px;
+}
+
+.logo1{
+    display: none;
 }
 
 .navigation ul{
@@ -53,7 +61,7 @@ body{
     font-size: 13px;
 }
 
-.navigation img{
+.ricerca img{
     width: 20px;
     vertical-align: middle;
 }
@@ -151,19 +159,29 @@ body{
 .main{
     width: 100%;
     height: 100%;
-    background-color: #141922;
-    padding: 100px 0 250vh 210px;
+    padding: 100px 0 0 210px;
     text-align: center;
 }
 
 .cartelle{
     margin-bottom: 50px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
-.cartelle li:first-child{
-    border-bottom: 1px solid #adff2f;
-    display: inline;
+.active{
+    display: inline-block;
+    position: relative;
+}
+
+.active::after{
+    display: block;
+    content: '';
+    background-color: #adff2f;
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    right: 25%;
+    transform: translatey(-50%);
 }
 
 .cartelle ul li{
@@ -257,6 +275,7 @@ body{
 
 .border-radius{
     border-radius: 100%;
+    margin-bottom: 80px;
 }
 
 /* FINE CONTENUTO CENTRALE E TOP BAR*/
@@ -467,11 +486,27 @@ label{
     }
 
     .nav-bar{
-        width: 40px;
+        width: 35px;
     }
 
     .logo1{
-        padding-left: 5px;
+        display: block;
+    }
+
+    .logo-spotify img {
+        width: 30px;
+        padding-right: 5px;
+    }
+
+    .ricerca img {
+        width: 32px;
+        padding-right: 5px;
+    }
+    
+    .navigation-bottom img{
+        width: 28px;
+        padding-right: 2px;
+        margin-left: 4px;
     }
 
     .border li:first-child {
@@ -488,7 +523,7 @@ label{
     }
 
     .main{
-        padding: 100px 0 250vh 60px;
+        padding: 100px 0 0 60px;
     }
 
     .name-bottom-bar{
@@ -496,12 +531,11 @@ label{
         flex-direction: column;
     }
 
-    .nav-bar{
-        
+    .nav-bar {
+        padding: 0 0 72px 0px;
     }
 
     .navigation{
-        margin-bottom: 425px;
         padding: 5px;
     }
 }

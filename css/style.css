@@ -269,7 +269,6 @@ body{
 }
 
 .col2-spotify{
-    width: calc(50% -60px);
     margin: 0 30px 30px 30px;
 }
 
@@ -364,7 +363,6 @@ body{
 }
 
 input[type="range"] {
-    -webkit-appearance: none;
     margin-right: 15px;
     width: 20vw;
     height: 3px;
@@ -537,5 +535,9 @@ label{
 
     .navigation{
         padding: 5px;
+    }
+
+    input[type="range"]{
+        width: 13vw;
     }
 }

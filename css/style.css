@@ -43,7 +43,7 @@ body{
 
 .navigation ul{
     list-style-type: none;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .navigation ul li{
@@ -66,9 +66,13 @@ body{
     vertical-align: middle;
 }
 
-.playlist{
-    margin-bottom: 250px;
-    overflow-y: scroll;
+.playlist1{
+    overflow-y: auto;
+    height: 38vh;
+}
+
+.playlist1 p{
+    font-size: 1rem;
 }
 
 .playlist i{
@@ -329,6 +333,10 @@ body{
     border-bottom: 1px solid #fff;
 }
 
+.col-bottom-bar i{
+    font-size: 1rem;
+}
+
 .col-bottom-bar i:hover{
     color: #fff;
 }
@@ -349,7 +357,6 @@ body{
 
 .play{
     height: 30px;
-    
 }
 
 .play i{
